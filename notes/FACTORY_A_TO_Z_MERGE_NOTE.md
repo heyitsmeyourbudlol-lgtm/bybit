@@ -1,10 +1,11 @@
-# Factory A→Z merge note
+# Factory A→Z merge note — bybit nineteenth
 
 Needle: `OVERSEER_KIT_RUN_AE_2026_09_07`
 
 - target: `/Users/togi/bybit`
-- worktree: `/Users/togi/bybit-kit-a-to-z-20260908T045833`
-- branch: `peer/kit-a-to-z-20260908T045833`
-- product seed: `5973ddc`
-- ts: 2026-09-08T04:59:00Z
-- note: lean Marketplace-style adapt + Mac gh PR; NO PAY
+- worktree: `/Users/togi/bybit-kit-a-to-z-20260908T050817`
+- branch: `peer/kit-a-to-z-20260908T050817`
+- prior: PR #1 MERGED `01793d4` (lean kit `78920bf`)
+- this: lean reaffirm receipt (exclude `.venv` / env) · Mac `gh` PR #2
+- ts: 2026-09-08T05:10Z
+- NO PAY

@@ -1,0 +1,378 @@
+{
+  "_generated_by": "automation_adapt.py",
+  "_generated_at": "2026-09-08T05:00:30.342383+00:00",
+  "verify_commands": [
+    "python3 scripts/peer_orchestrate.py --self-check",
+    "python3 -m unittest tests.test_automation -q",
+    "python3 -m unittest tests.test_run_peer_tasks -q",
+    "python3 -m unittest tests.test_peer_worktree -q",
+    "python3 -m unittest tests.test_peer_pen_test -q",
+    "python3 -m unittest tests.test_peer_remote -q",
+    "python3 -m unittest tests.test_compact_land_proof -q",
+    "python3 -m unittest tests.test_peer_last_cycle_poison -q",
+    "python3 -m unittest tests.test_peer_self_heal -q",
+    "python3 -m unittest tests.test_peer_repo_research -q",
+    "python3 -m unittest tests.test_pool_ensure_fastpath -q",
+    "python3 -m unittest tests.test_peer_dual_research_linux_install -q",
+    "python3 -m unittest tests.test_adapt_verify_protect -q",
+    "python3 -m unittest tests.test_emit_inventory_ttl_list_skip -q",
+    "python3 -m unittest tests.test_prepare_prompts_ttl -q",
+    "python3 -m unittest tests.test_auth_live_soft -q",
+    "python3 -m unittest tests.test_parse_phased_ttl -q",
+    "python3 -m unittest tests.test_cache_path_fallback -q",
+    "python3 -m unittest tests.test_self_check_dedup_measure -q"
+  ],
+  "_git_fingerprint": "5973ddcb0782798983f5f5486e207772f88229f8:?? .cursor/\n?? AGENTS.md\n?? IMPORT.md\n?? LAUNCH.md\n?? automation.config.json\n?? dgx_speed.local.json\n?? install.sh\n?? profiles/\n?? repos/\n?? scripts/.overseer_land.lock\n?? scripts/.test_automation.py.4PRWQl\n?? scripts/AGENT_ERROR_PLAYBOOK.md\n?? scripts/COMPRESSION_TRAIN_READY.md\n?? scripts/EXPECTED__mark_flaw_research_landed.py.md5\n?? scripts/EXPECTED_automation_adapt.py.md5\n?? scripts/EXPECTED_automation_improve.py.md5\n?? scripts/EXPECTED_beat-mac-clobber.sh.md5\n?? scripts/EXPECTED_dgx_ram_budget.py.md5\n?? scripts/EXPECTED_dgx_ram_priority.py.md5\n?? scripts/EXPECTED_dgx_setup.sh.md5\n?? scripts/EXPECTED_factory_fanout.py.md5\n?? scripts/EXPECTED_factory_grid.py.md5\n?? scripts/EXPECTED_factory_progress.py.md5\n?? scripts/EXPECTED_peer_agent_gates.py.md5\n?? scripts/EXPECTED_peer_commands.py.md5\n?? scripts/EXPECTED_peer_dual_research.py.md5\n?? scripts/EXPECTED_peer_error_adapt.py.md5\n?? scripts/EXPECTED_peer_land_hold.py.md5\n?? scripts/EXPECTED_peer_last_cycle_poison.py.md5\n?? scripts/EXPECTED_peer_loop.py.md5\n?? scripts/EXPECTED_peer_orchestrate.py.md5\n?? scripts/EXPECTED_peer_oversight.py.md5\n?? scripts/EXPECTED_peer_oversight_events.py.md5\n?? scripts/EXPECTED_peer_pen_test.py.md5\n?? scripts/EXPECTED_peer_pool_scrub.py.md5\n?? scripts/EXPECTED_peer_product_forge.py.md5\n?? scripts/EXPECTED_peer_remote.py.md5\n?? scripts/EXPECTED_peer_repo_research.py.md5\n?? scripts/EXPECTED_peer_self_heal.py.md5\n?? scripts/EXPECTED_peer_self_heal.py.md5.tmp\n?? scripts/EXPECTED_peer_team_context.py.md5\n?? scripts/EXPECTED_peer_transcript.py.md5\n?? scripts/EXPECTED_peer_worktree.py.md5\n?? scripts/EXPECTED_project_automation.py.md5\n?? scripts/EXPECTED_restore-hub-protect.sh.md5\n?? scripts/EXPECTED_run_peer_tasks.md5\n?? scripts/EXPECTED_run_peer_tasks.py.md5\n?? scripts/EXPECTED_test_automation.py.md5\n?? scripts/EXPECTED_test_automation_improve.py.md5\n?? scripts/EXPECTED_test_peer_last_cycle_poison.py.md5\n?? scripts/EXPECTED_test_peer_oversight_events.py.md5\n?? scripts/EXPECTED_test_peer_self_heal.py.md5\n?? scripts/EXPECTED_test_peer_worktree.py.md5\n?? scripts/EXPECTED_test_run_peer_tasks.py.md5\n?? scripts/WORK_QUEUE.md\n?? scripts/_clean_force_free_auth.py\n?? scripts/_clean_install_gpu_worker.py\n?? scripts/_clean_install_progress_watch.py\n?? scripts/_clean_install_result_watch.py\n?? scripts/_clean_switch_free_auth.py\n?? scripts/_infra_fix_once.py\n?? scripts/_infra_requeue_teacher.py\n?? scripts/_mark_flaw_research_landed.py\n?? scripts/_ov_atomic_state_lock_land.py\n?? scripts/_ov_land_state_lock.py\n?? scripts/_ov_patch_agent_exit_soft.py\n?? scripts/_ov_preserve_sync_lane.py.frag\n?? scripts/_ov_stag_finish.py\n?? scripts/_ov_stag_finish_gates.py\n?? scripts/_ov_stag_fix_land.py\n?? scripts/_overseer_heal_sync_pool.py\n?? scripts/_overseer_land_dirty_theater.py\n?? scripts/_overseer_land_shadow_purge.py\n?? scripts/_overseer_land_stagnation.py\n?? scripts/_overseer_stag2_land.py\n?? scripts/_overseer_stag3_land.py\n?? scripts/_overseer_stag_land_20260904.py\n?? scripts/_pin_dgx_dynamic.py\n?? scripts/agent_tools/\n?? scripts/asi_rubric.py\n?? scripts/automation.config.local.json\n?? scripts/automation.rules.json\n?? scripts/automation_actions.py\n?? scripts/automation_adapt.py\n?? scripts/automation_comms_improve.py\n?? scripts/automation_comms_research.py\n?? scripts/automation_config.py\n?? scripts/automation_engine.py\n?? scripts/automation_improve.py\n?? scripts/automation_research.py\n?? scripts/automation_rules_config.py\n?? scripts/automation_team.py\n?? scripts/autonomous_repair.py\n?? scripts/beat-mac-clobber.sh\n?? scripts/bitnet_fp4_expert_rss_smoke.py\n?? scripts/bundle_automation_kit.py\n?? scripts/command_ecosystem.py\n?? scripts/compression_ablation_schedule.py\n?? scripts/compression_auto_train.py\n?? scripts/compression_gpu_worker.py\n?? scripts/compression_keep_alive.py\n?? scripts/compression_logit_expand.py\n?? scripts/compression_result_watch.py\n?? scripts/compression_stress_suite.py\n?? scripts/compression_t0_pack.py\n?? scripts/compression_t1_share.py\n?? scripts/compression_t2_svd.py\n?? scripts/compression_t3_bitdistill.py\n?? scripts/compression_t4_scale.py\n?? scripts/compression_t5_serve.py\n?? scripts/compression_t6_quality.py\n?? scripts/compression_train_profile.py\n?? scripts/compression_train_rung0.py\n?? scripts/cursor_open_clean.sh\n?? scripts/cursor_self_improve.py\n?? scripts/dgx_gpu_compute.py\n?? scripts/dgx_gpu_events.py\n?? scripts/dgx_install_services.sh\n?? scripts/dgx_local_ram_guard.py\n?? scripts/dgx_local_ram_guard.sh\n?? scripts/dgx_mac_offload.sh\n?? scripts/dgx_mac_restore.sh\n?? scripts/dgx_ram_accel.py\n?? scripts/dgx_ram_accel_config.py\n?? scripts/dgx_ram_budget.py\n?? scripts/dgx_ram_efficiency.py\n?? scripts/dgx_ram_events.py\n?? scripts/dgx_ram_fill.py\n?? scripts/dgx_ram_priority.py\n?? scripts/dgx_resource_poll.py\n?? scripts/dgx_resource_priority.py\n?? scripts/dgx_setup.sh\n?? scripts/dgx_shm_hydrate.py\n?? scripts/dgx_speed.local.json\n?? scripts/dgx_sync_pull.sh\n?? scripts/dgx_sync_repos.sh\n?? scripts/dgx_utilization.py\n?? scripts/dgx_watch.py\n?? scripts/factory_dynamics.py\n?? scripts/factory_fanout.py\n?? scripts/factory_grid.py\n?? scripts/factory_kit_run.py\n?? scripts/factory_lora_train.py\n?? scripts/factory_niche_runtime.py\n?? scripts/factory_progress.py\n?? scripts/factory_sprint.py\n?? scripts/github_feedback.py\n?? scripts/gpu_profile_once.py\n?? scripts/grant-all-permissions.command\n?? scripts/grant-all-permissions.sh\n?? scripts/grant-peer-access.command\n?? scripts/knowledge_index.py\n?? scripts/knowledge_index_config.py\n?? scripts/knowledge_mamba.py\n?? scripts/knowledge_mamba_backends.py\n?? scripts/knowledge_mamba_cache.py\n?? scripts/knowledge_mamba_setup.sh\n?? scripts/knowledge_mamba_ssm.py\n?? scripts/knowledge_mamba_stack.py\n?? scripts/knowledge_retrieve.py\n?? scripts/niche_assist_once.py\n?? scripts/niche_bank_compress.py\n?? scripts/niche_bank_eval.py\n?? scripts/niche_bank_train.py\n?? scripts/niche_composer.py\n?? scripts/niche_domain_classifier_train.py\n?? scripts/niche_domain_classify.py\n?? scripts/niche_hot_path.py\n?? scripts/niche_mint.py\n?? scripts/niche_mint_train.py\n?? scripts/niche_n01_neural_train.py\n?? scripts/niche_n01_practice.py\n?? scripts/niche_n03_practice.py\n?? scripts/niche_n07_practice.py\n?? scripts/niche_n08_practice.py\n?? scripts/niche_retrieval.py\n?? scripts/peer\n?? scripts/peer-accessibility.sh\n?? scripts/peer-dispatch\n?? scripts/peer-loop-run\n?? scripts/peer-watch\n?? scripts/peer_agent_board.py\n?? scripts/peer_agent_builder.py\n?? scripts/peer_agent_comms.py\n?? scripts/peer_agent_gates.py\n?? scripts/peer_agent_human_gap.py\n?? scripts/peer_agent_mini_apps.py\n?? scripts/peer_agent_survival.py\n?? scripts/peer_command_builder.py\n?? scripts/peer_commands.py\n?? scripts/peer_company_org.py\n?? scripts/peer_critical_thinking.py\n?? scripts/peer_cursor.py\n?? scripts/peer_debrief.py\n?? scripts/peer_dual_research.py\n?? scripts/peer_error_adapt.py\n?? scripts/peer_fact_librarian.py\n?? scripts/peer_factory_a_plus.py\n?? scripts/peer_factory_a_to_z.py\n?? scripts/peer_flaw_scan.py\n?? scripts/peer_forge_scrub.py\n?? scripts/peer_glink_paste.py\n?? scripts/peer_hallucination_guard.py\n?? scripts/peer_idea_synthesis.py\n?? scripts/peer_investigate.py\n?? scripts/peer_kit_progress.py\n?? scripts/peer_land_hold.py\n?? scripts/peer_last_cycle_poison.py\n?? scripts/peer_lessons.py\n?? scripts/peer_loop.py\n?? scripts/peer_memory_auditor.py\n?? scripts/peer_memory_compress.py\n?? scripts/peer_memory_episodic.py\n?? scripts/peer_memory_health.py\n?? scripts/peer_memory_quiz.py\n?? scripts/peer_memory_span.py\n?? scripts/peer_orchestrate.py\n?? scripts/peer_output_compare.py\n?? scripts/peer_oversight.py\n?? scripts/peer_oversight_events.py\n?? scripts/peer_oversight_events.py.bak\n?? scripts/peer_parallel_dispatch.py\n?? scripts/peer_pen_test.py\n?? scripts/peer_persona_rules.py\n?? scripts/peer_playbook.py\n?? scripts/peer_pool_scrub.py\n?? scripts/peer_precision_habits.py\n?? scripts/peer_product_forge.py\n?? scripts/peer_progress_watch.py\n?? scripts/peer_project_learning.py\n?? scripts/peer_remote.py\n?? scripts/peer_repo_research.py\n?? scripts/peer_role_state.py\n?? scripts/peer_roles.py\n?? scripts/peer_rule_shutdown.py\n?? scripts/peer_self_diagnose.py\n?? scripts/peer_self_heal.py\n?? scripts/peer_session_amnesia.py\n?? scripts/peer_stall_pivot.py\n?? scripts/peer_tasks.json\n?? scripts/peer_team_context.py\n?? scripts/peer_terminal.py\n?? scripts/peer_top10_next.py\n?? scripts/peer_transcript.py\n?? scripts/peer_watch.py\n?? scripts/peer_work_assign.py\n?? scripts/peer_worktree.py\n?? scripts/plan_drift_cache.py\n?? scripts/product_drive.py\n?? scripts/product_e2e_improve.py\n?? scripts/production_power_scoreboard.py\n?? scripts/project_automation.py\n?? scripts/repo_domain_smes.json\n?? scripts/restore-hub-protect.sh\n?? scripts/run_improve_poll_cache.py\n?? scripts/run_peer_tasks.py\n?? scripts/self-improve\n?? scripts/self_improve_context.md\n?? scripts/self_improve_context.md.coachlock\n?? scripts/template_match.py\n?? scripts/test_adapt_audit_returncode.py\n?? scripts/test_automation.py\n?? scripts/test_dgx_ram_budget.py\n?? scripts/test_factory_grid.py\n?? scripts/test_run_peer_tasks.py\n?? scripts/trigger-tcc.swift\n?? tests/",
+  "module_scope": {
+    "_clean_force_free_auth": "scripts/_clean_force_free_auth.py",
+    "_clean_install_gpu_worker": "scripts/_clean_install_gpu_worker.py",
+    "_clean_install_progress_watch": "scripts/_clean_install_progress_watch.py",
+    "_clean_install_result_watch": "scripts/_clean_install_result_watch.py",
+    "_clean_switch_free_auth": "scripts/_clean_switch_free_auth.py",
+    "_infra_fix_once": "scripts/_infra_fix_once.py",
+    "_infra_requeue_teacher": "scripts/_infra_requeue_teacher.py",
+    "_mark_flaw_research_landed": "scripts/_mark_flaw_research_landed.py",
+    "_ov_atomic_state_lock_land": "scripts/_ov_atomic_state_lock_land.py",
+    "_ov_land_state_lock": "scripts/_ov_land_state_lock.py",
+    "_ov_patch_agent_exit_soft": "scripts/_ov_patch_agent_exit_soft.py",
+    "_ov_stag_finish": "scripts/_ov_stag_finish.py",
+    "_ov_stag_finish_gates": "scripts/_ov_stag_finish_gates.py",
+    "_ov_stag_fix_land": "scripts/_ov_stag_fix_land.py",
+    "_overseer_heal_sync_pool": "scripts/_overseer_heal_sync_pool.py",
+    "_overseer_land_dirty_theater": "scripts/_overseer_land_dirty_theater.py",
+    "_overseer_land_shadow_purge": "scripts/_overseer_land_shadow_purge.py",
+    "_overseer_land_stagnation": "scripts/_overseer_land_stagnation.py"
+  },
+  "peers": {
+    "implement": {
+      "reads": [
+        "AGENTS.md",
+        "README.md",
+        "notes/SAFETY_GATES.md",
+        "notes/VALUE_STACK.md"
+      ]
+    },
+    "verify": {
+      "reads": [
+        "AGENTS.md",
+        "notes/AUTOMATION.md"
+      ]
+    }
+  },
+  "match_rules": [
+    {
+      "template": "scope__clean_force_free_auth",
+      "any": [
+        " clean force free auth",
+        "_clean_force_free_auth",
+        "_clean_force_free_auth.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__clean_install_gpu_worker",
+      "any": [
+        " clean install gpu worker",
+        "_clean_install_gpu_worker",
+        "_clean_install_gpu_worker.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__clean_install_progress_watch",
+      "any": [
+        " clean install progress watch",
+        "_clean_install_progress_watch",
+        "_clean_install_progress_watch.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__clean_install_result_watch",
+      "any": [
+        " clean install result watch",
+        "_clean_install_result_watch",
+        "_clean_install_result_watch.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__clean_switch_free_auth",
+      "any": [
+        " clean switch free auth",
+        "_clean_switch_free_auth",
+        "_clean_switch_free_auth.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__infra_fix_once",
+      "any": [
+        " infra fix once",
+        "_infra_fix_once",
+        "_infra_fix_once.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__infra_requeue_teacher",
+      "any": [
+        " infra requeue teacher",
+        "_infra_requeue_teacher",
+        "_infra_requeue_teacher.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__mark_flaw_research_landed",
+      "any": [
+        " mark flaw research landed",
+        "_mark_flaw_research_landed",
+        "_mark_flaw_research_landed.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__ov_atomic_state_lock_land",
+      "any": [
+        " ov atomic state lock land",
+        "_ov_atomic_state_lock_land",
+        "_ov_atomic_state_lock_land.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__ov_land_state_lock",
+      "any": [
+        " ov land state lock",
+        "_ov_land_state_lock",
+        "_ov_land_state_lock.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__ov_patch_agent_exit_soft",
+      "any": [
+        " ov patch agent exit soft",
+        "_ov_patch_agent_exit_soft",
+        "_ov_patch_agent_exit_soft.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__ov_stag_finish",
+      "any": [
+        " ov stag finish",
+        "_ov_stag_finish",
+        "_ov_stag_finish.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__ov_stag_finish_gates",
+      "any": [
+        " ov stag finish gates",
+        "_ov_stag_finish_gates",
+        "_ov_stag_finish_gates.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__ov_stag_fix_land",
+      "any": [
+        " ov stag fix land",
+        "_ov_stag_fix_land",
+        "_ov_stag_fix_land.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__overseer_heal_sync_pool",
+      "any": [
+        " overseer heal sync pool",
+        "_overseer_heal_sync_pool",
+        "_overseer_heal_sync_pool.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__overseer_land_dirty_theater",
+      "any": [
+        " overseer land dirty theater",
+        "_overseer_land_dirty_theater",
+        "_overseer_land_dirty_theater.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__overseer_land_shadow_purge",
+      "any": [
+        " overseer land shadow purge",
+        "_overseer_land_shadow_purge",
+        "_overseer_land_shadow_purge.py"
+      ],
+      "priority": 45
+    },
+    {
+      "template": "scope__overseer_land_stagnation",
+      "any": [
+        " overseer land stagnation",
+        "_overseer_land_stagnation",
+        "_overseer_land_stagnation.py"
+      ],
+      "priority": 45
+    }
+  ],
+  "task_templates": {
+    "scope__clean_force_free_auth": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_clean_force_free_auth.py"
+      ],
+      "prompt": "Implement queue item for `_clean_force_free_auth`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__clean_install_gpu_worker": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_clean_install_gpu_worker.py"
+      ],
+      "prompt": "Implement queue item for `_clean_install_gpu_worker`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__clean_install_progress_watch": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_clean_install_progress_watch.py"
+      ],
+      "prompt": "Implement queue item for `_clean_install_progress_watch`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__clean_install_result_watch": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_clean_install_result_watch.py"
+      ],
+      "prompt": "Implement queue item for `_clean_install_result_watch`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__clean_switch_free_auth": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_clean_switch_free_auth.py"
+      ],
+      "prompt": "Implement queue item for `_clean_switch_free_auth`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__infra_fix_once": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_infra_fix_once.py"
+      ],
+      "prompt": "Implement queue item for `_infra_fix_once`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__infra_requeue_teacher": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_infra_requeue_teacher.py"
+      ],
+      "prompt": "Implement queue item for `_infra_requeue_teacher`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__mark_flaw_research_landed": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_mark_flaw_research_landed.py"
+      ],
+      "prompt": "Implement queue item for `_mark_flaw_research_landed`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__ov_atomic_state_lock_land": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_ov_atomic_state_lock_land.py"
+      ],
+      "prompt": "Implement queue item for `_ov_atomic_state_lock_land`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__ov_land_state_lock": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_ov_land_state_lock.py"
+      ],
+      "prompt": "Implement queue item for `_ov_land_state_lock`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__ov_patch_agent_exit_soft": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_ov_patch_agent_exit_soft.py"
+      ],
+      "prompt": "Implement queue item for `_ov_patch_agent_exit_soft`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__ov_stag_finish": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_ov_stag_finish.py"
+      ],
+      "prompt": "Implement queue item for `_ov_stag_finish`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__ov_stag_finish_gates": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_ov_stag_finish_gates.py"
+      ],
+      "prompt": "Implement queue item for `_ov_stag_finish_gates`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__ov_stag_fix_land": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_ov_stag_fix_land.py"
+      ],
+      "prompt": "Implement queue item for `_ov_stag_fix_land`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__overseer_heal_sync_pool": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_overseer_heal_sync_pool.py"
+      ],
+      "prompt": "Implement queue item for `_overseer_heal_sync_pool`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__overseer_land_dirty_theater": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_overseer_land_dirty_theater.py"
+      ],
+      "prompt": "Implement queue item for `_overseer_land_dirty_theater`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__overseer_land_shadow_purge": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_overseer_land_shadow_purge.py"
+      ],
+      "prompt": "Implement queue item for `_overseer_land_shadow_purge`. Minimal diff; match repo conventions; run verify before done."
+    },
+    "scope__overseer_land_stagnation": {
+      "peer": "implement",
+      "safety_tier": "green",
+      "scope": [
+        "scripts/_overseer_land_stagnation.py"
+      ],
+      "prompt": "Implement queue item for `_overseer_land_stagnation`. Minimal diff; match repo conventions; run verify before done."
+    }
+  },
+  "product_constraints": [
+    "Ladder: intelligence \u2192 speed \u2192 distribution \u2192 ecosystem (hub with gravity; 10 apps \u2260 ecosystem)",
+    "Keep after commoditization: queue semantics, verify gates, product constraints \u2014 not the daemon",
+    "Meta-skill: **exit each loop** when it becomes table stakes; migrate the brain, murder the boilerplate",
+    "Moat: users + shared primitives + habits + willingness to kill the kit"
+  ]
+}

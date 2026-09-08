@@ -13,7 +13,7 @@ User Active SoT: **nineteenth = bybit**. Skip CPT/Doc2Api/battery/browser/falcon
 | A adapt | ok — `automation_adapt.py --heal --write --quick --target /Users/togi/bybit` |
 | B verify | ok — `peer_orchestrate --self-check --quick` ISSUES:none |
 | C worktree | ok — wt=`/Users/togi/bybit-kit-a-to-z-20260908T050817` · branch=`peer/kit-a-to-z-20260908T050817` |
-| D artifact | prior [PR #1](https://github.com/heyitsmeyourbudlol-lgtm/bybit/pull/1) **MERGED** `01793d4` @ `78920bf` · reaffirm D=`blocked_receipt` (`gh_pr_create_failed` noop) → lean kit + Mac `gh` [PR #2](https://github.com/heyitsmeyourbudlol-lgtm/bybit/pull/2) |
+| D artifact | prior [PR #1](https://github.com/heyitsmeyourbudlol-lgtm/bybit/pull/1) **MERGED** `01793d4` @ `78920bf` · reaffirm D=`blocked_receipt` (`gh_pr_create_failed` noop) → lean kit + Mac `gh` [PR #3](https://github.com/heyitsmeyourbudlol-lgtm/bybit/pull/3) |
 | E writeback | ok — hub proof paths + this receipt |
 
 ## Irreversible artifact (Mac)
@@ -22,7 +22,7 @@ User Active SoT: **nineteenth = bybit**. Skip CPT/Doc2Api/battery/browser/falcon
 - Product seed: empty `.git` → product `5973ddc` (exclude `.venv` / local env)
 - Branch tip: `peer/kit-a-to-z-20260908T050817` (lean reaffirm)
 - PR #1: https://github.com/heyitsmeyourbudlol-lgtm/bybit/pull/1 **MERGED** `01793d4`
-- PR #2: lean reaffirm (this receipt)
+- PR #3: https://github.com/heyitsmeyourbudlol-lgtm/bybit/pull/3 **MERGED** `e64d3f0` (main tip)
 - Secrets: `.venv` gitignored · never in objects · no filled `.env`
 - Registry status → `adapt-verified-mac`
 
@@ -36,7 +36,7 @@ User Active SoT: **nineteenth = bybit**. Skip CPT/Doc2Api/battery/browser/falcon
 | wt / branch | tip |
 |-------------|-----|
 | `peer/kit-a-to-z-20260908T045833` | `78920bf` → merge `01793d4` |
-| `peer/kit-a-to-z-20260908T050817` | lean reaffirm (this receipt) |
+| `peer/kit-a-to-z-20260908T050817` | `5ab5439` → merge `e64d3f0` (main tip) |
 
 ## Next
 
